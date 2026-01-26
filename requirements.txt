@@ -1,1 +1,6 @@
 fastapi[standard]
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-dotenv
+PyMySQL
