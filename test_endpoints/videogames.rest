@@ -1,0 +1,87 @@
+### Prueba para sacar todos los videojuegos
+GET http://127.0.0.1:8000/videogames
+
+### Prueba para buscar un videojuego por id
+GET http://127.0.0.1:8000/videogames/1
+
+### Prueba para buscar un id de un videojuego que no existe
+GET http://127.0.0.1:8000/videogames/300
+
+### Crear un videojuego nuevo
+POST http://127.0.0.1:8000/videogames
+Content-Type: application/json
+
+{
+   "name": "Leyendas Z-A",
+    "genre": "Aventura",
+    "price": 49.99,
+    "platform": ["Nintendo Switch"],
+    "release_date": "2025-10-17"
+}
+
+### Crear un videojuego duplicado
+POST http://127.0.0.1:8000/videogames
+Content-Type: application/json
+
+{
+   "name": "Leyendas Z-A",
+    "genre": "Aventura",
+    "price": 49.99,
+    "platform": ["Nintendo Switch"],
+    "release_date": "2025-10-17"
+}
+
+### Crear un videojuego con el precio negativo
+POST http://127.0.0.1:8000/videogames
+Content-Type: application/json
+
+{
+   "name": "Leyendas Z",
+    "genre": "Aventura",
+    "price": -49.99,
+    "platform": ["Nintendo Switch"],
+    "release_date": "2025-10-17"
+}
+
+
+### Actualizar un videojuego existente
+PUT http://127.0.0.1:8000/videogames/1
+Content-Type: application/json
+
+{
+   "name": "Pokemon Leyendas Z-A",
+    "genre": "Aventura",
+    "price": 49.99,
+    "platform": ["Nintendo Switch"],
+    "release_date": "2025-10-17"
+}
+
+### Actualizar un videojuego que no existe
+PUT http://127.0.0.1:8000/videogames/300
+Content-Type: application/json
+
+{
+   "name": "Pokemon Leyendas Z-A",
+    "genre": "Aventura",
+    "price": 49.99,
+    "platform": ["Nintendo Switch"],
+    "release_date": "2025-10-17"
+}
+
+### Actualizar un videojuego poniendo precio menor que 0
+PUT http://127.0.0.1:8000/videogames/1
+Content-Type: application/json
+
+{
+   "name": "Pokemon Leyendas Z-A",
+    "genre": "Aventura",
+    "price": -49.99,
+    "platform": ["Nintendo Switch"],
+    "release_date": "2025-10-17"
+}
+
+### Eliminar un videojuego existente
+DELETE http://127.0.0.1:8000/videogames/1
+
+### Eliminar un videojuego que no existe
+DELETE http://127.0.0.1:8000/videogames/5

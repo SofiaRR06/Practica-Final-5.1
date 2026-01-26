@@ -1,0 +1,91 @@
+### Crear una plataforma
+POST http://127.0.0.1:8000/platforms/
+Content-Type: application/json
+
+{
+    "name": "Nintendo Switch",
+    "description": "Consola portátil y de sobremesa",
+    "price": 350.00,
+    "release_date": "2018-03-20",
+    "factory": "Nintendo",
+    "obtain_console": true
+}
+
+### Crear una plataforma duplicada
+POST http://127.0.0.1:8000/platforms/
+Content-Type: application/json
+
+{
+    "name": "Nintendo Switch",
+    "description": "Consola portátil y de sobremesa",
+    "price": 350.00,
+    "release_date": "2018-03-20",
+    "factory": "Nintendo",
+    "obtain_console": true
+}
+
+### Sacar todos las plataformas
+GET http://127.0.0.1:8000/platforms/
+
+### Buscar un plataforma por id
+GET http://127.0.0.1:8000/platforms/1
+
+### Buscar un id de una plataforma que no existe
+GET http://127.0.0.1:8000/platforms/300
+
+### Crear una plataforma con el precio negativo
+POST http://127.0.0.1:8000/platforms/
+Content-Type: application/json
+
+{
+    "name": "Nintendo Switch 2",
+    "description": "Consola portátil y de sobremesa",
+    "price": -350.00,
+    "release_date": "2025-03-20",
+    "factory": "Nintendo",
+    "obtain_console": false
+}
+
+### Actualizar una plataforma 
+PUT  http://127.0.0.1:8000/platforms/1
+Content-Type: application/json
+
+{
+    "name": "Nintendo Switch",
+    "description": "Consola portátil y de sobremesa que permite jugar juegos de última generación en cualquier parte",
+    "price": 500.00,
+    "release_date": "2018-03-20",
+    "factory": "Nintendo",
+    "obtain_console": true
+}
+
+### Actualizar una plataforma que no existe
+PUT  http://127.0.0.1:8000/platforms/300
+Content-Type: application/json
+
+{
+    "name": "Nintendo Switch 3",
+    "description": "Consola portátil y de sobremesa que permite jugar juegos de última generación en cualquier parte",
+    "price": 500.00,
+    "release_date": "2018-03-20",
+    "factory": "Nintendo",
+    "obtain_console": true
+}
+
+
+### Actualizar una plataforma con un precio menor que 0
+PUT  http://127.0.0.1:8000/platforms/1
+Content-Type: application/json
+
+{
+    "name": "Nintendo Switch",
+    "description": "Consola portátil y de sobremesa que permite jugar juegos de última generación en cualquier parte",
+    "price": -500.00,
+    "release_date": "2018-03-20",
+    "factory": "Nintendo",
+    "obtain_console": true
+}
+
+
+### Eliminar una plataforma
+DELETE http://127.0.0.1:8000/platforms/1
