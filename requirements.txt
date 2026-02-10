@@ -1,6 +1,4 @@
 fastapi[standard]
-uvicorn[standard]
+uvicorn
 sqlalchemy
-pydantic
-python-dotenv
-PyMySQL
+psycopg2-binary

@@ -9,14 +9,14 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 app.add_middleware(
-CORSMiddleware,
-allow_origins=[
-"http://localhost:5173", # React (Vite)
-"http://localhost:3000" # React (Create React App)
-],
-allow_credentials=True,
-allow_methods=["*"],
-allow_headers=["*"],
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",  # React (Vite)
+        "http://localhost:3000"   # React (Create React App)
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(videogames.router)
@@ -24,4 +24,4 @@ app.include_router(platforms.router)
 
 @app.get("/")
 def root():
-    return {"message": "API de videojuegos con FastAPI y SQLite"}
+    return {"message": "API de videojuegos con FastAPI"}

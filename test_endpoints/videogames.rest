@@ -12,10 +12,10 @@ POST http://127.0.0.1:8000/videogames
 Content-Type: application/json
 
 {
-   "name": "Leyendas Z-A",
+   "name": "Leyendas Z-A 1",
     "genre": "Aventura",
     "price": 49.99,
-    "platform": ["Nintendo Switch"],
+    "platform": ["Nintendo Switch 3"],
     "release_date": "2025-10-17"
 }
 
@@ -24,10 +24,10 @@ POST http://127.0.0.1:8000/videogames
 Content-Type: application/json
 
 {
-   "name": "Leyendas Z-A",
+   "name": "Leyendas Z-A 1",
     "genre": "Aventura",
     "price": 49.99,
-    "platform": ["Nintendo Switch"],
+    "platform": ["Nintendo Switch 3"],
     "release_date": "2025-10-17"
 }
 
@@ -49,10 +49,10 @@ PUT http://127.0.0.1:8000/videogames/1
 Content-Type: application/json
 
 {
-   "name": "Pokemon Leyendas Z-A",
+   "name": "Pokemon Leyendas Z-A 1",
     "genre": "Aventura",
     "price": 49.99,
-    "platform": ["Nintendo Switch"],
+    "platform": ["Nintendo Switch 3"],
     "release_date": "2025-10-17"
 }
 

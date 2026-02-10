@@ -3,7 +3,7 @@ POST http://127.0.0.1:8000/platforms/
 Content-Type: application/json
 
 {
-    "name": "Nintendo Switch",
+    "name": "Nintendo Switch 3",
     "description": "Consola portátil y de sobremesa",
     "price": 350.00,
     "release_date": "2018-03-20",
