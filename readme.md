@@ -55,3 +55,6 @@ He elegido este dominio porque me parece interesante poder tener información de
 Swagger UI: http://127.0.0.1:8000/docs
 
 Redoc: http://127.0.0.1:8000/redoc
+
+## Link de web pública en render
+https://videogames-api-52uc.onrender.com/
